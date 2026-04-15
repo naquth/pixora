@@ -238,7 +238,7 @@ export default function PostCard({ post }: Props) {
       <div className="px-4 py-3 flex items-center gap-3 border-t border-[var(--border)] mt-1">
         <div className="w-7 h-7 rounded-full overflow-hidden flex-shrink-0 bg-[var(--bg-muted)]">
           <Image
-            src="https://api.dicebear.com/9.x/notionists/svg?seed=me&backgroundColor=b6e3f4"
+            src="https://api.dicebear.com/9.x/notionists/png?seed=me&backgroundColor=b6e3f4"
             alt="me"
             width={28}
             height={28}
