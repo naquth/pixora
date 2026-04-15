@@ -24,7 +24,7 @@ export default function Sidebar() {
   const { theme, setTheme, setShowCreateModal, currentUser, unreadCount } = useAppStore();
 
   return (
-    <aside className="fixed left-0 top-0 h-full z-40 flex flex-col w-[72px] xl:w-[240px] border-r border-[var(--border)] bg-[var(--bg)] transition-all duration-300">
+    <aside className="fixed left-0 top-0 h-full z-40 hidden md:flex flex-col w-[72px] xl:w-[240px] border-r border-[var(--border)] bg-[var(--bg)] transition-all duration-300">
       {/* Logo */}
       <div className="px-3 xl:px-6 py-8">
         <Link href="/feed" className="flex items-center gap-3 group">
