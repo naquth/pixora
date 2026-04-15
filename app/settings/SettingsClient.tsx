@@ -2,12 +2,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import {
-  User, Lock, Bell, Eye, Moon, Sun, Smartphone, Shield,
+  User, Lock, Bell, Eye, Moon, Sun, Smartphone,
   HelpCircle, Info, LogOut, ChevronRight, Camera, BadgeCheck,
   Globe, Heart, MessageCircle, UserPlus, Tag
 } from "lucide-react";
 import { useAppStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
+import type { User as UserType } from "@/types";
 
 type SettingsSection = "main" | "account" | "privacy" | "notifications" | "appearance";
 
@@ -30,7 +31,7 @@ const SETTINGS_GROUPS = [
   },
 ];
 
-function AccountSettings({ user }: { user: ReturnType<typeof useAppStore>["currentUser"] }) {
+function AccountSettings({ user }: { user: UserType }) {
   return (
     <div className="space-y-6">
       {/* Avatar */}
