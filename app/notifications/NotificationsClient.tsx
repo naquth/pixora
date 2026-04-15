@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Heart, MessageCircle, UserPlus, AtSign, Tag, Share2, Check } from "lucide-react";
+import { Heart, MessageCircle, UserPlus, AtSign, Tag, Share2, Check, Bookmark } from "lucide-react";
 import { useAppStore } from "@/lib/store";
 import { timeAgo } from "@/lib/data";
 import { Notification } from "@/types";
@@ -13,7 +13,7 @@ const iconMap = {
   mention: { icon: AtSign, color: "text-purple-500", bg: "bg-purple-50 dark:bg-purple-950" },
   tag: { icon: Tag, color: "text-orange-500", bg: "bg-orange-50 dark:bg-orange-950" },
   share: { icon: Share2, color: "text-blue-500", bg: "bg-blue-50 dark:bg-blue-950" },
-  save: { icon: Heart, color: "text-pink-500", bg: "bg-pink-50 dark:bg-pink-950" },
+  save: { icon: Bookmark, color: "text-pink-500", bg: "bg-pink-50 dark:bg-pink-950" },
 };
 
 function NotifItem({ notif }: { notif: Notification }) {
