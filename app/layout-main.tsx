@@ -12,7 +12,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         <Sidebar />
 
         {/* Main content */}
-        <main className="ml-[72px] xl:ml-[240px] min-h-screen pb-20 md:pb-0 transition-all duration-300">
+        <main className="md:ml-[72px] xl:ml-[240px] min-h-screen pb-20 md:pb-0 transition-all duration-300">
           {children}
         </main>
 
