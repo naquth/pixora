@@ -57,7 +57,7 @@ export interface Story {
 
 export interface Notification {
   id: string;
-  type: "like" | "comment" | "follow" | "mention" | "tag" | "share";
+  type: "like" | "comment" | "follow" | "mention" | "tag" | "share" | "save";
   actor: User;
   post?: Post;
   message: string;
